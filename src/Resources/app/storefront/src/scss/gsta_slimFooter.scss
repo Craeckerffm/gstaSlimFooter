@@ -1,0 +1,11 @@
+.gsta-slimFooter__hideBorder {
+    border-top: none;
+  }
+.gsta-slimFooter__linkDivider{
+  .footer-link-item + .footer-link-item {
+   a{
+     border-left: 1px solid;
+     border-color: $sw-border-color;
+   }
+  }
+}

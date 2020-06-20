@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+        <title>Footer settings</title>
+        <title lang="de-DE">Footer Einstellungen</title>
+        <input-field type="single-select">
+            <name>navPosition</name>
+            <label>Navigation position</label>
+            <label lang="de-DE">Ausrichtung der Navigation</label>
+            <helpText>Adjust the position of navigation</helpText>
+            <helpText lang="de-DE">Passen Sie die Position der Navigation an</helpText>
+            <options>
+                <option>
+                    <id>1</id>
+                    <name>left</name>
+                    <name lang="de-DE">Links</name>
+                </option>
+                <option>
+                    <id>2</id>
+                    <name>center</name>
+                    <name lang="de-DE">Mittig</name>
+                </option>
+                <option>
+                    <id>3</id>
+                    <name>right</name>
+                    <name lang="de-DE">Rechts</name>
+                </option>
+            </options>
+        </input-field>
+        <input-field type="bool">
+            <name>hideBorder</name>
+            <label>Hide the upper footer border</label>
+            <label lang="de-DE">Verbergen sie die obere Footer Border</label>
+            <defaultValue>true</defaultValue>
+        </input-field>
+        <input-field type="bool">
+            <name>linkDivider</name>
+            <label>Show divider between Footer Links</label>
+            <label lang="de-DE">Trennstrich zwischen den Footerlinks einblenden</label>
+            <defaultValue>false</defaultValue>
+        </input-field>
+        <input-field type="bool">
+            <name>hideVat</name>
+            <label>Hide VAT Info</label>
+            <label lang="de-DE">Verbergen sie Mwst. Hinweise</label>
+            <defaultValue>false</defaultValue>
+        </input-field>
+        <input-field type="bool">
+            <name>hideCopyright</name>
+            <label>Hide Copyright Info</label>
+            <label lang="de-DE">Copyright Hinweise verbergen</label>
+            <defaultValue>false</defaultValue>
+        </input-field>
+    </card>
+
+</config>
