@@ -1,0 +1,35 @@
+{% sw_extends '@gstaSlimFooter/storefront/layout/footer/footer.html.twig' %}
+    {% set hideCopyright = shopware.config.gstaSlimFooter.config.hideCopyright %}
+    {% set hideVat = shopware.config.gstaSlimFooter.config.hideVat %}
+
+{% block layout_footer_inner_container %}
+    <footer class="footer-minimal">
+        {% block layout_footer_bottom %}
+            {% if hideVat is same as (true) and hideCopyright is same as (true) %}
+            {% else %}
+                <div class="p-1 d-md-flex justify-content-center">
+                    {% if not hideVat %}
+                        {% block layout_footer_vat %}
+                            <div class="small text-center {% if not hideCopyright %}mb-2 mr-md-4{% endif %} mb-md-0">
+                                {% if context.taxState == "gross" %}
+                                    <p class="m-0">{{ "footer.includeVat"|trans|sw_sanitize }}</p>
+                                {% else %}
+                                    <p class="m-0">{{ "footer.excludeVat"|trans|sw_sanitize }}</p>
+                                {% endif %}
+                            </div>
+                        {% endblock %}
+                    {% endif %}
+                    {% block layout_footer_service_menu %}{% endblock %}
+
+                    {% if not hideCopyright %}
+                        {% block layout_footer_copyright %}
+                            <div class="small footer-copyright">
+                                {{ "footer.copyrightInfo"|trans|sw_sanitize }}
+                            </div>
+                        {% endblock %}
+                    {% endif %}
+                </div>
+            {% endif %}
+        {% endblock %}
+    </footer>
+{% endblock %}

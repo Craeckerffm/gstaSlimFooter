@@ -2,7 +2,7 @@
 
 {% block base_footer %}
     {% set hideBorder = shopware.config.gstaSlimFooter.config.hideBorder %}
-    <footer class="footer-main{% if hideBorder is same as(true) %} gsta-slimFooter__hideBorder{% endif %}">
+    <footer class="footer-main gsta-slimFooter{% if hideBorder is same as(true) %} gsta-slimFooter__hideBorder{% endif %}">
         {% block base_footer_inner %}
       {{ parent() }}
         {% endblock %}

@@ -3,7 +3,7 @@
   "description": "A sleek minimal footer for Shopware 6",
   "type": "shopware-platform-plugin",
   "license": "MIT",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "authors": [{
     "name": "Gregor Staab",
     "email": "webmaster@webgestaltung.net"

@@ -1,3 +1,7 @@
+# 1.1.1
+- fixed: ausblenden der MwSt & copyright Hinweise gilt nun auch für die Checkout-Seiten
+- modified: Abstand nach unten verbessert
+
 # 1.1.0
 - feature added: VAT info einblenden / ausblenden
 - feature added: copyright info einblenden / ausblenden (Shopware Logo entfernt)
