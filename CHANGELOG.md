@@ -1,3 +1,6 @@
+# 1.1.2
+- fixed: typo in markup
+
 # 1.1.1
 - fixed: VAT & copyright toggle now affects the minimal-footer (Checkout etc.)
 - modified: improved spacing

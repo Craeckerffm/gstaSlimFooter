@@ -5,7 +5,6 @@
     {% set hideCopyright = shopware.config.gstaSlimFooter.config.hideCopyright %}
     {% set hideVat = shopware.config.gstaSlimFooter.config.hideVat %}
     {% set linkDivider = shopware.config.gstaSlimFooter.config.linkDivider %}
-
     <ul class="nav {% if navPos == '2' %}justify-content-center{% elseif navPos == '1' %}{% elseif navPos == '3' %}justify-content-end{% endif %} {% if linkDivider %}gsta-slimFooter__linkDivider{% endif %}">
         {% for root in page.footer.navigation.tree %}
             {% set linkId = root.category.cmsPageId %}
@@ -15,7 +14,6 @@
                     {{ root.category.name }}</a>
             </li>
         {% endfor %}
-
     </ul>
 
     {% block layout_footer_bottom %}
@@ -46,5 +44,4 @@
             </div>
         {% endif %}
     {% endblock %}
-
 {% endblock %}

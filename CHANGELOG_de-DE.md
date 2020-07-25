@@ -1,3 +1,6 @@
+# 1.1.2
+- fixed: typo in markup
+
 # 1.1.1
 - fixed: ausblenden der MwSt & copyright Hinweise gilt nun auch für die Checkout-Seiten
 - modified: Abstand nach unten verbessert
